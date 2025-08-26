@@ -1,0 +1,221 @@
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..900&display=swap" rel="stylesheet">
+<title>Lynxdeer</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<style>
+
+    body,html {
+        margin: 0;
+        padding: 0;
+        background-color: #111111;
+        color: white;
+        font-family: "Afacad Flux", "Roboto", sans-serif;
+        overflow-x: hidden;
+        scrollbar-width: none;
+    }
+
+    .header {
+        padding-top: 1vh;
+        background-color: black;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .header video {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .header h1 {
+        position: absolute;
+        top: 0%;
+        right: 10%;
+        font-size: 10vw;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        text-shadow:
+            0 2px 1vh #fff,
+            0 0 10vh #b73bf0,
+            0 0 20vh #541192,
+            0 0 40vh #1619da;
+    }
+
+    .content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+		font-size: 1vw;
+    }
+
+    .clients-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .client {
+        color: white;
+        background-color: #333;
+        padding: 15px;
+        font-size: 2.2vh;
+        display: flex;
+        align-items: center;
+        border: 2px solid #555;
+        border-radius: 8px;
+        transition: border-color 0.3s ease;
+        min-width: 250px;
+		margin-bottom: 5vh;
+    }
+
+    .client:hover {
+        border-color: #b73bf0;
+    }
+
+    .client img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 15px;
+        object-fit: cover;
+    }
+
+    .client-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .client-name {
+        font-size: 2.5vh;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .client-subs {
+        font-size: 1.8vh;
+        color: #aaa;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+</style>
+
+
+<div class="split" style="height:1vw;background-color:#000"></div>
+<div class="header">
+    <video autoplay playsinline muted>
+        <source src="video.vp9.webm" type="video/webm; codecs=vp9">
+        <source src="video.av1.webm" type="video/webm; codecs=av01">
+        Whoopsy daisy animation broken
+    </video>
+    <h1 id="name"></h1>
+</div>
+
+<div class="split" style="height:1vw;background-color:#222222"></div>
+
+<div class="content">
+	
+
+    <h1>Hey! I'm <span style="color:yellow">Lynxdeer</span>! I strive to <span style="color:yellow">push the limits</span> of unmodded minecraft.</h1>
+
+	<div class="split" style="height:0.25vw;background-color:#444;width:50%; position: relative;"></div>
+
+    <h1>I'll replace this video later with some real work I've done</h1>
+
+	<iframe width="640" height="480"
+		src="https://www.youtube.com/embed/lsLPaOe7DNs">
+	</iframe>
+
+    <h1>Notable People I've worked with:</h1>
+
+    <div class="clients-container">
+        <a href="https://www.youtube.com/@Sagi1" target="_blank" rel="noopener noreferrer">
+			<div class="client">
+				<img src="https://yt3.googleusercontent.com/tfP_1pg2GRMzkoT74jLKY8WDIxvRzUbUAe1absM8qpvNGrI3nwC254lN_je_qjciFX5_-uqP2A=s72-c-k-c0x00ffffff-no-rj" />
+				<div class="client-info">
+					<div class="client-name">Sagi</div>
+					<div class="client-subs">1.4M Subscribers</div>
+				</div>
+			</div>
+		</a>
+		<a href="https://www.youtube.com/@frediiiYT" target="_blank" rel="noopener noreferrer">
+			<div class="client">
+				<img src="https://yt3.googleusercontent.com/zPAnhmZjG1id2WRE4HnnlihDRwvRfdHikHk5NfZkvYbwY7ja2W9Q9KAUCygofyNBvZgIlc8Gow=s72-c-k-c0x00ffffff-no-rj" />
+				<div class="client-info">
+					<div class="client-name">Frediii</div>
+					<div class="client-subs">71K Subscribers</div>
+				</div>
+			</div>
+		</a>
+		<a href="https://www.youtube.com/@cyproh" target="_blank" rel="noopener noreferrer">
+			<div class="client">
+				<img src="https://yt3.googleusercontent.com/n4a8ANOZ7DID_CF0zTY51qJJ0XjKB6ajJd1Chnfz9CO1S19B4UgRk89-4SHdfvVxpZxgQLJu=s72-c-k-c0x00ffffff-no-rj" />
+				<div class="client-info">
+					<div class="client-name">Cypro</div>
+					<div class="client-subs">40K Subscribers</div>
+				</div>
+			</div>
+		</a>
+    </div>
+
+</div>
+
+<div class="content">
+
+    <h1>My stuff!</h1>
+
+    <div class="clients-container">
+		<a href="https://github.com/Lynxdeer" target="_blank" rel="noopener noreferrer">
+			<div class="client">
+				<img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" />
+				<div class="client-info">
+					<div class="client-name">Github</div>
+					<div class="client-subs">My projects!</div>
+				</div>
+			</div>
+		</a>
+		
+		<a href="https://www.youtube.com/@Lynxdeer" target="_blank" rel="noopener noreferrer">
+			<div class="client">
+				<img src="https://lh3.googleusercontent.com/QP9hJ2wj1TqRnPy-xZHgWH3sK4pQioveDMGK-CUSl4945zICnjxqr8Y7yWu0q1YOyuWWq0O-QLmtGCi8XhJqyeYn_oQY78KAbJH9c_Ngp_qtS_UDTHE" />
+				<div class="client-info">
+					<div class="client-name">YouTube</div>
+					<div class="client-subs">I used to animate!</div>
+				</div>
+			</div>
+		</a>
+	</div>
+
+</div>
+
+<script>
+
+    const name = "Lynxdeer";
+    let nameDisplay = document.getElementById("name");
+
+    let i = 0;
+    const interval = setInterval(() => {
+		let fin = name.substring(0, i);
+        nameDisplay.innerHTML = fin;
+        nameDisplay.style.color = `rgb(${i/name.length * 255}, ${i/name.length * 255}, ${i/name.length * 255})`
+        i++;
+        if (i > name.length) clearInterval(interval);
+    }, 50)
+
+</script>
