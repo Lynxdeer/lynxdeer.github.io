@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS created by AI because I hate css lmao -->
+    <title>AutoDeafen Setup Guide</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0f1117;
+            color: #e2e8f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #1a1d27;
+            border-bottom: 1px solid #2d3148;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #a78bfa;
+            letter-spacing: -0.5px;
+        }
+
+        header p.subtitle {
+            margin-top: 0.5rem;
+            color: #94a3b8;
+            font-size: 1rem;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 4rem;
+        }
+
+        .video-section {
+            margin-bottom: 3rem;
+        }
+
+        .video-section h2 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #7c85a2;
+            margin-bottom: 1rem;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 1px solid #2d3148;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #2d3148;
+            margin: 2.5rem 0;
+        }
+
+        .step {
+            margin-bottom: 2.5rem;
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .step-number {
+            background-color: #4c1d95;
+            color: #c4b5fd;
+            font-weight: 700;
+            font-size: 0.85rem;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .step h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #e2e8f0;
+        }
+
+        .step p {
+            color: #94a3b8;
+            font-size: 0.97rem;
+            padding-left: 2.85rem;
+        }
+
+        .callout {
+            background-color: #1e2235;
+            border-left: 3px solid #7c3aed;
+            border-radius: 0 8px 8px 0;
+            padding: 1rem 1.25rem;
+            margin: 2rem 0;
+            color: #a5b4cf;
+            font-size: 0.95rem;
+        }
+
+        .callout strong {
+            color: #c4b5fd;
+        }
+
+        code {
+            background-color: #1e2235;
+            color: #a78bfa;
+            padding: 0.15rem 0.45rem;
+            border-radius: 4px;
+            font-family: 'Cascadia Code', 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #4a5568;
+            font-size: 0.85rem;
+            border-top: 1px solid #1e2235;
+        }
+        code a {
+            color: #a78bfa;
+            text-decoration: none;
+            border-bottom: 1px dashed #7c3aed;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        code a:hover {
+            color: #c4b5fd;
+            border-bottom-color: #c4b5fd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>How to set up AutoDeafen</h1>
+        <!-- <p class="subtitle">Follow the steps below to get up and running quickly.</p> -->
+    </header>
+
+    <div class="container">
+
+        <!-- Video Section -->
+        <h2>2 Minute Video Guide</h2><br>
+        <div class="video-section">
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/QYHF1oAaFhU"
+                    title="AutoDeafen Setup Tutorial"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <hr class="divider">
+        <h2>Text Guide (for the impatient)</h2>
+        <br>
+
+        <div class="step">
+            <div class="step-header">
+                <div class="step-number">1</div>
+                <h2>Creating a Discord Application</h2>
+            </div>
+            <p>
+                For the mod to work, we need to create an application to interface with our discord client.<br>
+                Go to <code><a href="https://discord.com/developers/applications" target="_blank">https://discord.com/developers/applications</a></code>.<br>
+                Create a New Application and enter a name. The name doesn't actually matter, so just input whatever.
+            </p>
+        </div>
+
+        <div class="step">
+            <div class="step-header">
+                <div class="step-number">2</div>
+                <h2>Setting up OAuth2</h2>
+            </div>
+            <p>
+                Now, we need to get our application's credentials: our <code>Client ID</code> and <code>Client Secret</code>. 
+                <br>Navigate to the <code>OAuth2</code> tab on the left of the screen.<br>
+                <br>
+                Copy the <code>Client ID</code> by pressing the Clipboard Button next to it.<br>
+                Tab back into Geometry Dash and click the button that says <code>Paste Client ID</code>. You should see a string of numbers appear above it (your client id).<br>
+                <br>
+                Get your <code>Client Secret</code> by pressing the "Reset Client Secret" button. If you have 2FA enabled, you'll have to authenticate first. Press the clipboard button to copy your client secret.<br>
+                Tab back into Geometry Dash and click the button that says <code>Paste Client Secret</code>. You should see a string of letters and numbers appear above it (your client secret).<br>
+                <br>
+                Finally, you'll have to add a redirect. Press the button that says <code>Add Redirect</code> and type in the url <code>http://localhost:8080</code>.
+            </p>
+        </div>
+
+        <div class="callout">
+            <strong>Side Note:</strong> This <b>Client Secret</b> is not the same as your discord client token. It is unique to the application you just created, and gives control of the application to whatever possesses it. 
+            Although it probably doesn't matter if it's leaked anywhere since (to my knowledge) you couldn't really do much with it since there is no bot connected to it, it's probably unwise to share it.
+        </div>
+
+        <div class="step">
+            <div class="step-header">
+                <div class="step-number">3</div>
+                <h2>Giving your application permissions</h2>
+            </div>
+            <p>
+                Now that your application is connected, it needs permission to do its job. Pressing the <code>Next</code> button in-game after setting your client id and secret will bring you to a webpage to authorize the application.<br>
+                Click the <code>Authorize</code> button- and you're all done!
+            </p>
+        </div>
+
+        <div class="step">
+            <div class="step-header">
+                <h2>Troubleshooting</h2>
+            </div>
+            <p>
+                I'll add issues and fixes here as they pop up, but if you have an issue not listed here, message me (@lynxdeer) on discord!
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        Got any issues? Make one on <a href="https://github.com/Lynxdeer/AutoDeafen" target="_blank">GitHub</a> or (preferably) just message me directly on discord (@lynxdeer)
+    </footer>
+
+</body>
+</html>
