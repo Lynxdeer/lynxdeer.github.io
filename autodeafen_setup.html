@@ -162,6 +162,15 @@
             color: #c4b5fd;
             border-bottom-color: #c4b5fd;
         }
+        
+        .troubleshoot-img {
+            display: block;
+            max-width: 100%;
+            width: auto;
+            border-radius: 8px;
+            border: 1px solid #2d3148;
+            margin: 1rem 0 0.5rem 0;
+        }
     </style>
 </head>
 <body>
@@ -241,9 +250,20 @@
             <div class="step-header">
                 <h2>Troubleshooting</h2>
             </div>
+            
+            
+            <image class="troubleshoot-img" src = "images/auth_failed.png"></image>
+            <p>If you get a popup like this, try restarting your game. If that doesn't work, try re-setting up.</p>
+            <br>
             <p>
                 I'll add issues and fixes here as they pop up, but if you have an issue not listed here, message me (@lynxdeer) on discord!
             </p>
+            
+            <image class="troubleshoot-img" src = "images/invalid_oauth2_redirect_uri.png"></image>
+            <br>
+            <p>If you get a screen like this when pressing the Next Button, make sure that your redirect url is exactly <code>http://localhost:8080</code>. Then, go back to this screen and refresh the page.</p>
+            <br>
+            
         </div>
 
     </div>
